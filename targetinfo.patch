@@ -1,15 +1,21 @@
---- openwrt-imagebuilder-22.03.0-rc4-x86-64.Linux-x86_64/.targetinfo	2022-06-10 09:20:21.000000000 +0200
-+++ .targetinfo	2022-06-22 21:21:32.890616682 +0200
-@@ -27226,7 +27226,7 @@
+--- .targetinfo.orig	2022-09-03 04:55:34.000000000 +0200
++++ .targetinfo	2022-09-12 20:20:32.434325219 +0200
+@@ -27336,11 +27336,11 @@
+ Target-Name: x86_64
+ Target-Arch: x86_64
  Target-Arch-Packages: x86_64
  Target-Features: boot-part display ext4 fpu gpio pci pcie pcmcia rootfs-part rtc squashfs targz usb vdi vhdx virtio vmdk
  Target-Depends: 
 -Target-Optimization: -Os -pipe
 +Target-Optimization: -Os -pipe -march=btver2
  CPU-Type: 
- Linux-Version: 5.10.120
+ Linux-Version: 5.10.138
  Linux-Release: 1
-@@ -27249,6 +27249,14 @@
+ Linux-Kernel-Arch: x86
+ Target-Description:
+@@ -27359,10 +27359,17 @@
+ 
+ 
  
  @@
  
@@ -17,10 +23,11 @@
 +Target-Profile-Name: PC Engines APU2
 +Target-Profile-Packages: 6in4 bash rng-tools luci luci-mod-rpc luci-ssl ntpd htop beep amd64-microcode irqbalance fstrim libsensors lm-sensors usbutils wpad kmod-ath9k kmod-ath10k ath10k-firmware-qca988x kmod-igb kmod-gpio-button-hotplug kmod-gpio-nct5104d kmod-hwmon-core kmod-crypto-hw-ccp kmod-pcengines-apuv2 kmod-leds-gpio kmod-pcspkr kmod-sound-core kmod-sp5100-tco kmod-usb-core kmod-usb-ohci kmod-usb-serial kmod-usb-storage kmod-usb-storage-uas block-mount fdisk smartmontools hdparm kmod-usb2 kmod-usb3 -kmod-e1000e -kmod-e1000 -kmod-r8169
 +Target-Profile-Description:
-+PC Engines APU2 Embedded Board
++		PC Engines APU2 Embedded Board
 +
 +@@
-+
  
  Source-Makefile: target/linux/zynq/Makefile
  Target: zynq
+ Target-Board: zynq
+ Target-Name: Xilinx Zynq 7000 SoCs
