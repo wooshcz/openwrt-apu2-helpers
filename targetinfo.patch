@@ -1,6 +1,6 @@
---- .targetinfo.orig	2022-09-03 04:55:34.000000000 +0200
-+++ .targetinfo	2022-09-12 20:20:32.434325219 +0200
-@@ -27336,11 +27336,11 @@
+--- .targetinfo.orig	2023-10-09 23:45:35.000000000 +0200
++++ .targetinfo	2023-10-14 20:08:18.760589203 +0200
+@@ -35478,11 +35478,11 @@
  Target-Name: x86_64
  Target-Arch: x86_64
  Target-Arch-Packages: x86_64
@@ -9,11 +9,11 @@
 -Target-Optimization: -Os -pipe
 +Target-Optimization: -Os -pipe -march=btver2
  CPU-Type: 
- Linux-Version: 5.10.138
+ Linux-Version: 5.15.134
  Linux-Release: 1
  Linux-Kernel-Arch: x86
  Target-Description:
-@@ -27359,10 +27359,17 @@
+@@ -35503,10 +35503,17 @@
  
  
  
